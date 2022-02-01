@@ -28,5 +28,12 @@ export class AppComponent {
     });
   }
 
-  display;
+  displayData() {
+    this.formGroupOne.get('name').set(this.name);
+    this.formGroupOne.get('phone').set(this.phone);
+    this.formGroupOne.get('email').set(this.email);
+    this.formGroupOne.get('city').set(this.city);
+  }
+
+  saveForm() {}
 }
